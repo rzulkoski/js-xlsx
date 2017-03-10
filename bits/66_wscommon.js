@@ -13,7 +13,7 @@ function get_cell_style(styles, cell, opts) {
 	for(var i = 0, len = styles.length; i != len; ++i) if(styles[i].numFmtId === z) return i;
 	styles[len] = {
 		numFmtId:z,
-		fontId:0,
+		fontId:cell.bold ? 1 : 0,
 		fillId:0,
 		borderId:0,
 		xfId:0,
